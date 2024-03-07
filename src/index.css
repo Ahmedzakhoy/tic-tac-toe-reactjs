@@ -38,6 +38,7 @@ header img {
   object-fit: contain;
   margin: 3rem auto 1rem auto;
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+  max-width: 50%;
 }
 
 h1 {
@@ -72,6 +73,7 @@ h1 {
   align-items: center;
   width: 50%;
   border: 2px solid transparent;
+  justify-content: center;
 }
 
 #players.highlight-player li.active {
@@ -348,4 +350,111 @@ ol {
   100% {
     transform: scale(1);
   }
+}
+
+
+/* media queries */
+@media only screen and (max-width: 760px) {
+  #game-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  
+  #players {
+    margin: 0.5rem 0;
+    gap: 1rem;
+  }
+  #players button {
+    width: 1.5rem;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.12rem 0.12rem 0.12rem;
+  }
+    .player {
+    padding: 0.25rem;
+  }
+  
+  .player-name {
+    width: 6rem;
+    font-size:0.75rem;
+    padding: 0.25rem;
+  }
+  
+  .player input {
+    font-size: 0.75rem;
+    width: 6rem;
+    padding: 0.25rem;
+  }
+  
+  .player-symbol {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+}
+
+@media only screen and (max-width: 430px) {
+  #players button {
+    font-size: 0.5rem;
+  }
+  
+  .player-name {
+    width: 4rem;
+    font-size:0.5rem;
+  }
+  
+  .player input {
+    font-size: 0.5rem;
+    width: 4rem;
+  }
+  
+  .player-symbol {
+    font-size: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  #game-board {
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  
+  #game-board ol {
+    gap: 0.5rem;
+  }
+  
+  #game-board button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+  
+}
+
+@media only screen and (max-width: 360px) {
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+  }
+  
+}
+
+@media only screen and (max-width: 550px) {
+  #game-over h2 {
+    font-size: 2.5rem;
+  }
+  
+  #game-over p {
+    font-size: 1rem;
+  }
+  
+  #game-over button {
+    font-size: 1rem;
+  }
+  #log li {
+    font-size: 0.8rem;
+  }
+  
 }
